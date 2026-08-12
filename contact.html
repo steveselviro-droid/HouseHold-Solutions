@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Household Solutions</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-name">Household Solutions</span>
+      <span class="brand-tag">Always One Call Away</span>
+    </a>
+    <nav class="main-nav">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="indoor.html">Indoor</a>
+      <a class="nav-link" href="outdoor.html">Outdoor</a>
+      <a class="nav-link" href="how-it-works.html">How It Works</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link active" href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="icon-btn" data-tel-href href="#" aria-label="Call us"><span data-icon="phone"></span></a>
+      <a class="icon-btn wa" data-wa-href href="#" target="_blank" aria-label="WhatsApp us"><span data-icon="whatsapp"></span></a>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Contact Us</h2>
+      <p>We're always one call away.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <div class="contact-info-card">
+          <div class="info-row">
+            <div class="ic"><span data-icon="phone"></span></div>
+            <div><strong>Phone</strong><a data-tel-href href="#" data-phone-text></a></div>
+          </div>
+          <div class="info-row">
+            <div class="ic"><span data-icon="whatsapp"></span></div>
+            <div><strong>WhatsApp</strong><a data-wa-href href="#" target="_blank" data-phone-text></a></div>
+          </div>
+          <div class="info-row">
+            <div class="ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 6l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+            </div>
+            <div><strong>Email</strong><a href="mailto:steveselviro@gmail.com">steveselviro@gmail.com</a></div>
+          </div>
+          <div class="info-row">
+            <div class="ic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </div>
+            <div><strong>Location</strong><span>Windhoek, Namibia</span></div>
+          </div>
+
+          <table class="hours-table mt-40">
+            <tr><td><strong>Monday – Saturday</strong></td><td>7:00 AM – 6:00 PM</td></tr>
+            <tr><td><strong>Sunday</strong></td><td>Closed</td></tr>
+          </table>
+        </div>
+
+        <div class="map-embed">
+          <iframe src="https://maps.google.com/maps?q=Windhoek%2C%20Namibia&z=12&output=embed" loading="lazy" title="Household Solutions service area — Windhoek, Namibia"></iframe>
+        </div>
+      </div>
+
+      <div class="form-shell" style="padding:30px;">
+        <h3 style="margin-bottom:4px;">Send us a message</h3>
+        <p style="color:var(--text-light);font-size:0.92rem;margin-bottom:20px;">We'll get back to you as soon as we can.</p>
+
+        <div class="form-success"></div>
+
+        <!-- Replace YOUR_FORM_ID with your Formspree endpoint (see booking.html for setup notes) -->
+        <form data-formspree action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input id="c-name" name="name" type="text" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="c-phone">Phone</label>
+            <input id="c-phone" name="phone" type="tel" required placeholder="081 234 5678">
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" required placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block">Send Message</button>
+        </form>
+
+        <div class="divider">or reach us directly</div>
+        <div class="btn-row">
+          <a data-tel-href href="#" class="btn btn-blue"><span data-icon="phone"></span> Call Now</a>
+          <a data-wa-href href="#" target="_blank" class="btn btn-green"><span data-icon="whatsapp"></span> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">Household Solutions</span>
+      <p style="color:#9db3c6;margin-top:6px;">Always One Call Away</p>
+    </div>
+    <nav class="footer-links">
+      <a href="indoor.html">Indoor</a>
+      <a href="outdoor.html">Outdoor</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-contacts">
+      <a data-tel-href href="#">Call</a>
+      <a data-wa-href href="#" target="_blank">WhatsApp</a>
+      <a href="mailto:steveselviro@gmail.com">Email</a>
+    </div>
+  </div>
+  <p class="footer-bottom">© 2026 Household Solutions. All rights reserved.</p>
+</footer>
+
+<script src="js/icons.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
