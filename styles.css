@@ -181,7 +181,7 @@ nav.main-nav a.nav-link.active { color: #fff; border-color: var(--gold); }
 
 /* ---------- Choose service cards ---------- */
 .choice-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
 }
 .choice-card {
   background: var(--card);
@@ -200,6 +200,7 @@ nav.main-nav a.nav-link.active { color: #fff; border-color: var(--gold); }
 }
 .choice-card.indoor .choice-icon { background: rgba(26,58,92,0.1); color: var(--blue); }
 .choice-card.outdoor .choice-icon { background: rgba(46,204,113,0.14); color: var(--green-dark); }
+.choice-card.events .choice-icon { background: rgba(241,196,15,0.18); color: var(--gold-dark); }
 .choice-icon svg { width: 32px; height: 32px; }
 .choice-card h3 { font-size: 1.4rem; margin-bottom: 8px; }
 .choice-card p { color: var(--text-light); margin-bottom: 22px; }
@@ -237,6 +238,7 @@ nav.main-nav a.nav-link.active { color: #fff; border-color: var(--gold); }
   margin-bottom: 14px;
 }
 .outdoor-page .service-icon { background: rgba(46,204,113,0.13); color: var(--green-dark); }
+.events-page .service-icon { background: rgba(241,196,15,0.18); color: var(--gold-dark); }
 .service-icon svg { width: 24px; height: 24px; }
 .service-card h4 { font-size: 1.02rem; margin-bottom: 6px; }
 .service-card p { font-size: 0.9rem; color: var(--text-light); margin: 0; }
