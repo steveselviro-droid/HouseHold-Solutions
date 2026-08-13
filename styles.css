@@ -48,7 +48,11 @@ img { max-width: 100%; display: block; }
 
 .wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
 .section { padding: 72px 0; }
-.section-alt { background: var(--card); }
+.section-alt {
+  background:
+    linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,0.93)),
+    url('images/steps-bg.jpg') center/cover no-repeat;
+}
 .eyebrow {
   font-family: var(--font-display);
   text-transform: uppercase;
@@ -147,7 +151,9 @@ nav.main-nav a.nav-link.active { color: #fff; border-color: var(--gold); }
 
 /* ---------- Hero ---------- */
 .hero {
-  background: linear-gradient(160deg, var(--blue) 0%, var(--blue-dark) 100%);
+  background:
+    linear-gradient(160deg, rgba(26,58,92,0.88) 0%, rgba(18,40,63,0.92) 100%),
+    url('images/hero-bg.jpg') center/cover no-repeat;
   color: #fff;
   padding: 100px 0 90px;
   position: relative;
