@@ -424,28 +424,46 @@ fieldset legend { font-size: 0.86rem; font-weight: 600; color: var(--blue); marg
   * { transition: none !important; scroll-behavior: auto !important; }
 }
 
-/* ---------- Homepage-only photo backgrounds (hero-bg.jpg, repeated) ---------- */
-body.home-page .hero {
-  background:
-    linear-gradient(160deg, rgba(26,58,92,0.5) 0%, rgba(18,40,63,0.55) 100%),
-    url('images/hero-bg.jpg') center/cover no-repeat;
+/* ---------- Per-page photo backgrounds ---------- */
+/* Pages with a distinct .hero banner: image goes behind the hero only */
+.home-page .hero,
+.indoor-page .hero,
+.outdoor-page .hero,
+.events-page .hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-body.home-page .hero h1,
-body.home-page .hero p.lead {
-  text-shadow: 0 2px 10px rgba(0,0,0,0.45);
+.home-page .hero { background-image: linear-gradient(160deg, rgba(26,58,92,0.42) 0%, rgba(18,40,63,0.48) 100%), url('images/home-bg.jpg'); }
+.indoor-page .hero { background-image: linear-gradient(160deg, rgba(26,58,92,0.42) 0%, rgba(18,40,63,0.48) 100%), url('images/indoor-bg.jpg'); }
+.outdoor-page .hero { background-image: linear-gradient(160deg, rgba(26,58,92,0.42) 0%, rgba(18,40,63,0.48) 100%), url('images/outdoor-bg.jpg'); }
+.events-page .hero { background-image: linear-gradient(160deg, rgba(26,58,92,0.42) 0%, rgba(18,40,63,0.48) 100%), url('images/events-bg.jpg'); }
+.home-page .hero h1, .home-page .hero p.lead,
+.indoor-page .hero h1, .indoor-page .hero p.lead,
+.outdoor-page .hero h1, .outdoor-page .hero p.lead,
+.events-page .hero h1, .events-page .hero p.lead {
+  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
 }
-body.home-page .photo-bg {
-  background:
-    linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
-    url('images/hero-bg.jpg') center/cover no-repeat;
+
+/* Pages with no separate .hero: image goes behind the whole top section */
+.about-page .section:first-of-type,
+.how-it-works-page .section:first-of-type {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-body.home-page .cta-band {
-  background:
-    linear-gradient(160deg, rgba(26,58,92,0.55) 0%, rgba(18,40,63,0.6) 100%),
-    url('images/hero-bg.jpg') center/cover no-repeat;
+.about-page .section:first-of-type {
+  background-image: linear-gradient(rgba(255,255,255,0.42), rgba(255,255,255,0.42)), url('images/about-bg.jpg');
 }
-body.home-page .cta-band h2,
-body.home-page .cta-band p,
-body.home-page .cta-band .cta-contact {
-  text-shadow: 0 2px 10px rgba(0,0,0,0.45);
+.how-it-works-page .section:first-of-type {
+  background-image: linear-gradient(rgba(255,255,255,0.42), rgba(255,255,255,0.42)), url('images/howitworks-bg.jpg');
+}
+.about-page .section:first-of-type .eyebrow,
+.about-page .section:first-of-type h2,
+.about-page .section:first-of-type .section-head p,
+.about-page .section:first-of-type .about-copy p,
+.how-it-works-page .section:first-of-type .eyebrow,
+.how-it-works-page .section:first-of-type h2,
+.how-it-works-page .section:first-of-type .section-head p {
+  text-shadow: 0 0 12px rgba(255,255,255,0.95), 0 0 4px rgba(255,255,255,0.95);
 }
