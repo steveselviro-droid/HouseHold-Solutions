@@ -34,6 +34,21 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'booking.html' + (params.toString() ? '?' + params.toString() : '');
       });
     }
+
+    /* ---- selector panel's own WhatsApp button: carry ticked boxes into the message ---- */
+    const selectorWaLink = selectorForm.querySelector('[data-wa-href]');
+    if (selectorWaLink) {
+      selectorWaLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        const checked = [...selectorForm.querySelectorAll('input[type="checkbox"]:checked')]
+          .map(c => c.value);
+        const type = selectorForm.dataset.type || '';
+        let msg = `Hi Household Solutions, I'd like to book a job.%0A`;
+        if (type) msg += `Type: ${type}%0A`;
+        msg += checked.length ? `Services: ${checked.join(', ')}` : `Services: (none ticked yet)`;
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank');
+      });
+    }
   }
 
   /* ---- prefill booking form from URL params ---- */
