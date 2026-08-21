@@ -14,6 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
   }
 
+  /* ---- dropdown toggle for mobile ---- */
+  document.querySelectorAll('.nav-item-with-dropdown').forEach(item => {
+    const link = item.querySelector('a.nav-link');
+    if (link) {
+      link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 720) {
+          e.preventDefault();
+          item.classList.toggle('active');
+        }
+      });
+    }
+  });
+
   /* ---- mark active nav link ---- */
   const here = location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-link').forEach(a => {
