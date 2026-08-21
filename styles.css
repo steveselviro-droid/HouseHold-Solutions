@@ -135,8 +135,10 @@ nav.main-nav a.nav-link.active { color: #fff; border-color: var(--gold); }
   transition: background 0.15s ease;
 }
 .icon-btn:hover { background: rgba(255,255,255,0.22); }
-.icon-btn svg { width: 18px; height: 18px; color: #fff; }
+.icon-btn svg { width: 20px; height: 20px; color: #fff; }
 .icon-btn.wa svg { color: var(--green); }
+.icon-btn.fb svg { color: #1877F2; }
+.icon-btn.ig svg { color: #E1306C; }
 
 .nav-toggle {
   display: none;
@@ -466,4 +468,106 @@ fieldset legend { font-size: 0.86rem; font-weight: 600; color: var(--blue); marg
 .how-it-works-page .section:first-of-type h2,
 .how-it-works-page .section:first-of-type .section-head p {
   text-shadow: 0 0 12px rgba(255,255,255,0.95), 0 0 4px rgba(255,255,255,0.95);
+}
+
+/* ---------- Pricing pages (Indoor / Outdoor) ---------- */
+.size-nav {
+  position: sticky; top: 0; z-index: 40;
+  background: var(--card); border-bottom: 1px solid var(--border);
+  padding: 14px 0; margin-bottom: 48px;
+}
+.size-nav-inner { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.size-nav-label { font-weight: 700; color: var(--text-light); font-size: 0.86rem; margin-right: 4px; }
+.size-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(26,58,92,0.06); border: 1px solid var(--border);
+  border-radius: 999px; padding: 8px 18px; font-weight: 700; font-size: 0.88rem;
+  color: var(--blue); text-decoration: none; transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.size-pill span { font-weight: 500; color: var(--text-light); font-size: 0.8rem; }
+.size-pill:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+.size-pill:hover span { color: #cfe0ee; }
+.outdoor-page .size-pill:hover { background: var(--green-dark); border-color: var(--green-dark); }
+
+.pricing-section { margin-bottom: 64px; scroll-margin-top: 84px; }
+.pricing-head {
+  display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap;
+  gap: 16px; margin-bottom: 22px; padding-bottom: 18px; border-bottom: 2px solid var(--border);
+}
+.pricing-head h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); margin-bottom: 4px; }
+.pricing-head .pricing-meta { color: var(--text-light); font-size: 0.92rem; }
+.pricing-base-price { text-align: right; }
+.pricing-base-price .amount { font-family: var(--font-display); font-size: 1.9rem; font-weight: 800; color: var(--blue); line-height: 1; }
+.outdoor-page .pricing-base-price .amount { color: var(--green-dark); }
+.pricing-base-price .time { color: var(--text-light); font-size: 0.82rem; margin-top: 4px; }
+
+.included-list {
+  display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 28px;
+  color: var(--text-light); font-size: 0.88rem;
+}
+.included-list span { display: inline-flex; align-items: center; gap: 6px; }
+.included-list svg { width: 14px; height: 14px; color: var(--green-dark); flex-shrink: 0; }
+
+.package-card {
+  background: linear-gradient(135deg, rgba(241,196,15,0.12), rgba(241,196,15,0.04));
+  border: 1.5px solid rgba(241,196,15,0.5); border-radius: var(--radius);
+  padding: 18px 22px; margin-bottom: 26px;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+}
+.package-card .package-info h4 { font-size: 1rem; margin-bottom: 3px; }
+.package-card .package-info p { font-size: 0.85rem; color: var(--text-light); margin: 0; }
+.package-card .package-price { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.package-card .package-price .amount { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; color: var(--blue); }
+
+.extras-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 14px; color: var(--text); }
+.extras-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 20px; margin-bottom: 8px; }
+.extra-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 11px 14px; font-size: 0.9rem; transition: border-color 0.15s ease, background 0.15s ease;
+}
+.extra-row:has(input:checked) { border-color: var(--gold); background: rgba(241,196,15,0.07); }
+.extra-row label { display: flex; align-items: center; gap: 10px; cursor: pointer; flex: 1; min-width: 0; }
+.extra-row input[type="checkbox"] { accent-color: var(--gold); width: 17px; height: 17px; flex-shrink: 0; }
+.extra-row .extra-name { flex: 1; }
+.extra-row .extra-price { font-weight: 700; color: var(--blue); white-space: nowrap; font-size: 0.86rem; }
+.outdoor-page .extra-row .extra-price { color: var(--green-dark); }
+.extra-row .qty-stepper { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.extra-row .qty-btn {
+  width: 22px; height: 22px; border-radius: 6px; border: 1px solid var(--border);
+  background: var(--card); cursor: pointer; font-weight: 700; line-height: 1;
+  display: flex; align-items: center; justify-content: center; color: var(--blue); font-size: 0.9rem;
+}
+.extra-row .qty-btn:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+.extra-row .qty-val { min-width: 16px; text-align: center; font-weight: 700; font-size: 0.86rem; }
+
+.price-summary {
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+  background: var(--blue); color: #fff; border-radius: var(--radius);
+  padding: 18px 24px; margin: 26px 0;
+}
+.outdoor-page .price-summary { background: var(--green-dark); }
+.price-summary .label { font-size: 0.88rem; color: #cfe0ee; }
+.price-summary .total-amount { font-family: var(--font-display); font-size: 1.7rem; font-weight: 800; color: var(--gold); }
+.price-summary .selected-note { font-size: 0.78rem; color: #9db3c6; margin-top: 2px; }
+
+.pricing-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.pricing-actions .btn { flex: 1; min-width: 140px; justify-content: center; }
+
+.garage-tiers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 22px; }
+.garage-tier {
+  background: var(--card); border: 2px solid var(--border); border-radius: var(--radius);
+  padding: 18px 20px; cursor: pointer; transition: border-color 0.15s ease, background 0.15s ease;
+}
+.garage-tier:has(input:checked) { border-color: var(--gold); background: rgba(241,196,15,0.06); }
+.garage-tier label { display: flex; align-items: center; gap: 10px; cursor: pointer; margin-bottom: 8px; font-weight: 700; }
+.garage-tier input[type="radio"] { accent-color: var(--gold); width: 17px; height: 17px; }
+.garage-tier .garage-price { font-family: var(--font-display); font-weight: 800; color: var(--green-dark); font-size: 1.1rem; margin-left: auto; }
+.garage-tier p { font-size: 0.84rem; color: var(--text-light); margin: 0; }
+
+@media (max-width: 880px) {
+  .extras-list { grid-template-columns: 1fr; }
+  .garage-tiers { grid-template-columns: 1fr; }
+  .pricing-actions .btn { min-width: 100%; }
+  .size-nav { position: static; }
 }
