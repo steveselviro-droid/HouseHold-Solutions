@@ -4,6 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Book a Job — Household Solutions</title>
+<meta name="description" content="Book a household job in Windhoek — indoor, outdoor, or event cleaning. WhatsApp, call, or fill in the booking form and we'll confirm the details.">
+<link rel="canonical" href="https://steveselviro-droid.github.io/HouseHold-Solutions/booking.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Book a Job — Household Solutions">
+<meta property="og:description" content="Book a household job in Windhoek — indoor, outdoor, or event cleaning. WhatsApp, call, or fill in the booking form and we'll confirm the details.">
+<meta property="og:url" content="https://steveselviro-droid.github.io/HouseHold-Solutions/booking.html">
+<meta property="og:image" content="https://steveselviro-droid.github.io/HouseHold-Solutions/images/home-bg.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Book a Job — Household Solutions">
+<meta name="twitter:description" content="Book a household job in Windhoek — indoor, outdoor, or event cleaning. WhatsApp, call, or fill in the booking form and we'll confirm the details.">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -88,6 +98,7 @@
           <div class="radio-row">
             <label><input type="radio" name="job_type" value="Indoor" checked> Indoor</label>
             <label><input type="radio" name="job_type" value="Outdoor"> Outdoor</label>
+            <label><input type="radio" name="job_type" value="Garage Cleaning"> Garage Cleaning</label>
             <label><input type="radio" name="job_type" value="Events"> Event Cleaning</label>
             <label><input type="radio" name="job_type" value="Both"> Both</label>
           </div>
@@ -98,14 +109,20 @@
           <input id="services" name="services" type="text" placeholder="e.g. Laundry, Bathroom Cleaning">
         </div>
 
+        <div class="field">
+          <label for="total">Estimated Total</label>
+          <input id="total" name="total" type="text" placeholder="Auto-filled if you priced this on the Indoor/Outdoor page — otherwise we'll confirm a quote with you">
+        </div>
+
         <div class="field-grid">
           <div class="field">
-            <label for="area_size">Size of Area</label>
+            <label for="area_size">House Size</label>
             <select id="area_size" name="area_size">
               <option value="">Select one</option>
-              <option>Small room</option>
-              <option>Whole house</option>
-              <option>Big yard</option>
+              <option>Small (2 bed, 1 bath)</option>
+              <option>Medium (3 bed, 1–2 bath)</option>
+              <option>Large (4 bed, 2–3 bath)</option>
+              <option>XL (5+ bed, 3+ bath)</option>
               <option>Not sure</option>
             </select>
           </div>
