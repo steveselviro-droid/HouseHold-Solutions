@@ -30,8 +30,27 @@
     </a>
     <nav class="main-nav">
       <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link active" href="indoor.html">Indoor</a>
-      <a class="nav-link" href="outdoor.html">Outdoor</a>
+      <div class="nav-item has-dropdown">
+        <a class="nav-link active" href="indoor.html">Indoor</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-label">Jump to house size</span>
+          <a href="indoor.html#size-small">Small <span>2 bed</span></a>
+          <a href="indoor.html#size-medium">Medium <span>3 bed</span></a>
+          <a href="indoor.html#size-large">Large <span>4 bed</span></a>
+          <a href="indoor.html#size-xl">XL <span>5+ bed</span></a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a class="nav-link" href="outdoor.html">Outdoor</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-label">Jump to size / job</span>
+          <a href="outdoor.html#size-small">Small <span>yard</span></a>
+          <a href="outdoor.html#size-medium">Medium <span>yard</span></a>
+          <a href="outdoor.html#size-large">Large <span>yard</span></a>
+          <a href="outdoor.html#size-xl">XL <span>yard</span></a>
+          <a href="outdoor.html#garage">Garage <span>cleaning</span></a>
+        </div>
+      </div>
       <a class="nav-link" href="events.html">Events</a>
       <a class="nav-link" href="how-it-works.html">How It Works</a>
       <a class="nav-link" href="about.html">About</a>
@@ -92,16 +111,6 @@
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg> Tidy up</span>
       </div>
 
-      <div class="package-card">
-        <div class="package-info">
-          <h4>Or get the Full Deep Clean — everything included</h4>
-          <p>General clean plus every indoor extra above, done in one visit. 4–6 hrs.</p>
-        </div>
-        <div class="package-price">
-          <span class="amount">N$1,800</span>
-          <button type="button" class="btn btn-outline-blue pp-package" data-price="1800" data-label="Full Deep Clean Package (Small)">Select Package</button>
-        </div>
-      </div>
       <div class="extras-title">Add extras (tick everything you'd like):</div>
       <div class="extras-list">
         <div class="extra-row">
@@ -120,7 +129,7 @@
           <span class="extra-price">+N$150</span>
         </div>
         <div class="extra-row">
-          <label><input type="checkbox" class="extra-check" data-price="150" data-label="Wardrobe Interior Cleaning"> <span class="extra-name">Wardrobe Interior Cleaning <em style="font-style:normal;color:var(--text-light);">(per wardrobe)</em></span></label>
+          <label><input type="checkbox" class="extra-check" data-price="150" data-label="Wardrobe Interior Cleaning"> <span class="extra-name">Wardrobe Interior Cleaning <em style="font-style:normal;color:var(--text-light);">(per room)</em></span></label>
           <div class="qty-stepper">
               <button type="button" class="qty-btn qty-minus" aria-label="decrease">−</button>
               <span class="qty-val">1</span>
@@ -205,6 +214,17 @@
         </div>
       </div>
 
+      <div class="package-card">
+        <div class="package-info">
+          <h4>Or get the Full Deep Clean — everything included</h4>
+          <p>General clean plus every indoor extra above, done in one visit. 4–6 hrs.</p>
+        </div>
+        <div class="package-price">
+          <span class="amount">N$1,800</span>
+          <button type="button" class="btn btn-outline-blue pp-package" data-price="1800" data-label="Full Deep Clean Package (Small)">Select Package</button>
+        </div>
+      </div>
+
       <div class="price-summary">
         <div>
           <div class="label">Estimated Total</div>
@@ -243,16 +263,6 @@
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg> Tidy up</span>
       </div>
 
-      <div class="package-card">
-        <div class="package-info">
-          <h4>Or get the Full Deep Clean — everything included</h4>
-          <p>General clean plus every indoor extra above, done in one visit. 6–8 hrs.</p>
-        </div>
-        <div class="package-price">
-          <span class="amount">N$2,650</span>
-          <button type="button" class="btn btn-outline-blue pp-package" data-price="2650" data-label="Full Deep Clean Package (Medium)">Select Package</button>
-        </div>
-      </div>
       <div class="extras-title">Add extras (tick everything you'd like):</div>
       <div class="extras-list">
         <div class="extra-row">
@@ -271,7 +281,7 @@
           <span class="extra-price">+N$200</span>
         </div>
         <div class="extra-row">
-          <label><input type="checkbox" class="extra-check" data-price="200" data-label="Wardrobe Interior Cleaning"> <span class="extra-name">Wardrobe Interior Cleaning <em style="font-style:normal;color:var(--text-light);">(per wardrobe)</em></span></label>
+          <label><input type="checkbox" class="extra-check" data-price="200" data-label="Wardrobe Interior Cleaning"> <span class="extra-name">Wardrobe Interior Cleaning <em style="font-style:normal;color:var(--text-light);">(per room)</em></span></label>
           <div class="qty-stepper">
               <button type="button" class="qty-btn qty-minus" aria-label="decrease">−</button>
               <span class="qty-val">1</span>
@@ -356,6 +366,17 @@
         </div>
       </div>
 
+      <div class="package-card">
+        <div class="package-info">
+          <h4>Or get the Full Deep Clean — everything included</h4>
+          <p>General clean plus every indoor extra above, done in one visit. 6–8 hrs.</p>
+        </div>
+        <div class="package-price">
+          <span class="amount">N$2,650</span>
+          <button type="button" class="btn btn-outline-blue pp-package" data-price="2650" data-label="Full Deep Clean Package (Medium)">Select Package</button>
+        </div>
+      </div>
+
       <div class="price-summary">
         <div>
           <div class="label">Estimated Total</div>
@@ -394,16 +415,6 @@
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg> Tidy up</span>
       </div>
 
-      <div class="package-card">
-        <div class="package-info">
-          <h4>Or get the Full Deep Clean — everything included</h4>
-          <p>General clean plus every indoor extra above, done in one visit. 8–10 hrs.</p>
-        </div>
-        <div class="package-price">
-          <span class="amount">N$3,550</span>
-          <button type="button" class="btn btn-outline-blue pp-package" data-price="3550" data-label="Full Deep Clean Package (Large)">Select Package</button>
-        </div>
-      </div>
       <div class="extras-title">Add extras (tick everything you'd like):</div>
       <div class="extras-list">
         <div class="extra-row">
@@ -422,7 +433,7 @@
           <span class="extra-price">+N$250</span>
         </div>
         <div class="extra-row">
-          <label><input type="checkbox" class="extra-check" data-price="250" data-label="Wardrobe Interior Cleaning"> <span class="extra-name">Wardrobe Interior Cleaning <em style="font-style:normal;color:var(--text-light);">(per wardrobe)</em></span></label>
+          <label><input type="checkbox" class="extra-check" data-price="250" data-label="Wardrobe Interior Cleaning"> <span class="extra-name">Wardrobe Interior Cleaning <em style="font-style:normal;color:var(--text-light);">(per room)</em></span></label>
           <div class="qty-stepper">
               <button type="button" class="qty-btn qty-minus" aria-label="decrease">−</button>
               <span class="qty-val">1</span>
@@ -507,6 +518,17 @@
         </div>
       </div>
 
+      <div class="package-card">
+        <div class="package-info">
+          <h4>Or get the Full Deep Clean — everything included</h4>
+          <p>General clean plus every indoor extra above, done in one visit. 8–10 hrs.</p>
+        </div>
+        <div class="package-price">
+          <span class="amount">N$3,550</span>
+          <button type="button" class="btn btn-outline-blue pp-package" data-price="3550" data-label="Full Deep Clean Package (Large)">Select Package</button>
+        </div>
+      </div>
+
       <div class="price-summary">
         <div>
           <div class="label">Estimated Total</div>
@@ -545,16 +567,6 @@
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg> Tidy up</span>
       </div>
 
-      <div class="package-card">
-        <div class="package-info">
-          <h4>Or get the Full Deep Clean — everything included</h4>
-          <p>General clean plus every indoor extra above, done in one visit. 10–12+ hrs.</p>
-        </div>
-        <div class="package-price">
-          <span class="amount">N$4,500+</span>
-          <button type="button" class="btn btn-outline-blue pp-package" data-price="4500" data-label="Full Deep Clean Package (XL)">Select Package</button>
-        </div>
-      </div>
       <div class="extras-title">Add extras (tick everything you'd like):</div>
       <div class="extras-list">
         <div class="extra-row">
@@ -573,7 +585,7 @@
           <span class="extra-price">+N$300</span>
         </div>
         <div class="extra-row">
-          <label><input type="checkbox" class="extra-check" data-price="300" data-label="Wardrobe Interior Cleaning"> <span class="extra-name">Wardrobe Interior Cleaning <em style="font-style:normal;color:var(--text-light);">(per wardrobe)</em></span></label>
+          <label><input type="checkbox" class="extra-check" data-price="300" data-label="Wardrobe Interior Cleaning"> <span class="extra-name">Wardrobe Interior Cleaning <em style="font-style:normal;color:var(--text-light);">(per room)</em></span></label>
           <div class="qty-stepper">
               <button type="button" class="qty-btn qty-minus" aria-label="decrease">−</button>
               <span class="qty-val">1</span>
@@ -655,6 +667,17 @@
               <button type="button" class="qty-btn qty-plus" aria-label="increase">+</button>
             </div>
           <span class="extra-price">+N$200</span>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <div class="package-info">
+          <h4>Or get the Full Deep Clean — everything included</h4>
+          <p>General clean plus every indoor extra above, done in one visit. 10–12+ hrs.</p>
+        </div>
+        <div class="package-price">
+          <span class="amount">N$4,500+</span>
+          <button type="button" class="btn btn-outline-blue pp-package" data-price="4500" data-label="Full Deep Clean Package (XL)">Select Package</button>
         </div>
       </div>
 
